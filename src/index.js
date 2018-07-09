@@ -36,7 +36,7 @@ class App extends React.Component {
     render() {
         // make input delay 300ms before api calls on change
         const videoSearch = _.debounce((term) => {
-            this.videoSearch(term)
+            this.videoSearch(term);
         },300);
 
         return(
@@ -55,8 +55,8 @@ class App extends React.Component {
                 />
 
             </div>
-        )
-    };
+        );
+    }
 }
 
 // Add those produced HTML to the page.
